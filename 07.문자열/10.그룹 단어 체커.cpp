@@ -18,17 +18,37 @@
 int main()
 {
 
-    char input[101]={0,};
-    int WordCnt=0,cnt=0,size=0;
+    char input[101] = { 0, };
+    int WordCnt = 0, cnt = 0, size = 0;
 
-    scanf("%d",&WordCnt);
+    scanf("%d", &WordCnt);
+    cnt = WordCnt;
+    for (int i = 0; i < WordCnt; i++)
+    {
+        scanf("%s", &input);
+        size = strlen(input);
 
-    for(int i=0;i<WordCnt;i++)
-    {  
-        scanf("%s",&input);
-        size=strlen(input);
-        printf("%d",size);
+        for (int j = 0; j < size; j++)
+        {
+            for (int k = j+1; k < size; k++)
+            {
+                if (input[j] == input[k])
+                {
+                    for (k; k < size; k++)
+                    {
 
+                    }
+                    if (k - j > 1)
+                    {
+                        cnt--;
+                        break;
+                   }
+                }
+            }
+            break;
+        }
     }
-	return 0;
+    printf("%d", cnt);
+
+    return 0;
 }
