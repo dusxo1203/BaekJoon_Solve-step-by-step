@@ -5,7 +5,7 @@ https://www.acmicpc.net/problem/10250
 ACM 호텔
 
 관련 블로그: 
-https://dusxo1203.tistory.com/59
+https://dusxo1203.tistory.com/
 
 */
 
